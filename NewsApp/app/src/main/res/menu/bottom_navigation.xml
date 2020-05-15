@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?android:colorBackground"
+    android:backgroundTint="?android:colorBackground">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_headlines"
+        android:icon="@drawable/ic_icons8_news"
+        android:title="Headlines"/>
+
+    <item
+        android:id="@+id/nav_trending"
+        android:icon="@drawable/baseline_trending_up_24"
+        android:title="Trending"/>
+
+    <item
+        android:id="@+id/nav_bookmark"
+        android:icon="@drawable/baseline_bookmarks_black_24dp"
+        android:title="Bookmark"/>
+
+</menu>

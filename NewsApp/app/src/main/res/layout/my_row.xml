@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:shadowDx="100"
+        android:shadowDy="100"
+        android:shadowRadius="80"
+        android:id="@+id/lini"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            app:cardBackgroundColor="@color/cardback"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <ImageView
+                    android:id="@+id/myimage"
+                    android:layout_width="111dp"
+                    android:layout_height="118dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/rainy_weather"
+                    tools:layout_editor_absoluteX="-1dp"
+                    tools:layout_editor_absoluteY="-2dp" />
+
+                <TextView
+                    android:id="@+id/mytitle"
+                    android:layout_width="250dp"
+                    android:layout_height="78dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Premier league players may be willing to pay wages of  club staff, says PFA "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/myimage"
+                    tools:layout_editor_absoluteY="1dp" />
+
+                <TextView
+                    android:id="@+id/mytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="11dp"
+                    android:text="1m ago"
+                    app:layout_constraintStart_toEndOf="@+id/myimage"
+                    app:layout_constraintTop_toBottomOf="@+id/mytitle" />
+
+                <TextView
+                    android:id="@+id/mytag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="11dp"
+                    android:text="TextView"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toBottomOf="@+id/mytitle" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="11dp"
+                    android:text="&#124;"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintStart_toEndOf="@+id/mytime"
+                    app:layout_constraintTop_toBottomOf="@+id/mytitle" />
+
+                <ImageView
+                    android:id="@+id/Bookimage"
+                    android:layout_width="21dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mytitle"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_bookmark_border_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
